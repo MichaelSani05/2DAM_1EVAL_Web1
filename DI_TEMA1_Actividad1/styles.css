@@ -1,0 +1,228 @@
+body{
+    background-color: rgb(5, 5, 32);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    padding-top: 75px;
+}
+
+nav{
+    background-color: rgb(0, 0, 0);
+}
+
+nav a, nav span{
+    color: white !important;
+}
+
+.navbar-brand{
+    letter-spacing: 1.5px;
+}
+
+.nav-link:hover{
+    color: #33c48c !important;
+}
+
+.navbar-toggler{
+    background-color: #33c48c;
+}
+
+.navbar-toggler:hover{
+    box-shadow: 2px 2px 2px white;
+    border: 1px solid white;
+}
+
+.navbar-toggler:active{
+    background-color: white;
+}
+
+.dropdown-item{
+    color: black !important;
+}
+
+p{
+    letter-spacing: 1.1px;
+}
+
+.space-1, .space-2, .space-3{
+    width: var(--size);
+    height: var(--size);
+    background: #fff;
+    box-shadow: var(--space-layer);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 75%;
+    animation: moveStars var(--duration) linear infinite;
+}
+  
+@keyframes moveStars{
+from{
+    transform: translateY(0);
+}
+
+to{
+    transform: translateY(-100vh);
+}
+}
+
+.hero{
+    color: white;
+    margin: 250px auto;
+}
+
+.hero-title{
+    color: #33c48c !important;
+    animation: aparecer linear both, aparecer linear;
+    animation-timeline: view(100% 20%);
+    animation-range: 0 300px;
+}
+
+.hero-title2{
+    animation: aparecer linear both;
+    animation-timeline: view(10% 50%);
+    animation-range: 0 200px;
+}
+
+.hero img{
+    animation: opacidad linear both;
+    animation-timeline: view(30% 35%);
+    animation-range: 0 400px;
+}
+
+.hero-text{
+    animation: aparecer linear both;
+    animation-timeline: view(15% 20%);
+    animation-range: 0 350px;
+}
+
+.hero-text2{
+    animation: aparecer linear both;
+    animation-timeline: view(15% 40%);
+    animation-range: 0 350px;
+}
+
+#btn-visitar, #btn-hero {
+    margin-top: 30px;
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: hsl(150, 80%, 48%);
+    box-shadow: rgba(238, 238, 238, 0.836) 0 0 8px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    color: white;
+    font-weight: 600;
+}
+
+#btn-visitar:hover, #btn-hero:hover {
+    background-color: white;
+    color: hsl(0, 0%, 9%);
+    box-shadow: rgb(24, 220, 129) 0px 7px 29px 0px;
+}
+
+#btn-visitar:active, #btn-hero:active {
+    background-color: hsl(157, 80%, 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(231, 231, 231) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+#caracteristicas{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(73, 73, 73);
+}
+
+#caracteristicas i{
+    color: #33c48c;
+    font-size: 30pt;
+}
+
+#destacado{
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#destacado h1{
+    color: #33c48c;
+}
+
+    .item-info{
+        padding: 10px;
+        background-color: white;
+        border-radius: 15px;
+        color: black;
+        height: 100%;
+        gap: .5em;
+        display: grid;
+        margin-top: 20px;
+    }
+   
+   .item-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+   }
+   
+   .text-body {
+    color: rgb(134, 134, 134);
+    margin: 0;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 0.2px;
+   }
+   
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0px;
+    color: #13aa70;
+   }
+
+   .text-body i{
+    color: #13aa70;
+   }
+
+   .item-info:hover {
+    border-color: #086340;
+    box-shadow: 1px 4px 18px 1px rgba(161, 161, 161, 0.25);
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+   }
+
+   .item-info:hover .text-title, .item-info:hover .text-body i{
+    color: #4ece9d;
+   }
+
+   .item-info:hover .text-body span{
+    color: white;
+   }
+   
+   .item-info:hover .item-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
