@@ -226,3 +226,69 @@ to{
     transform: translate(-50%, 50%);
     opacity: 1;
    }
+
+   #caracteristicas-2{
+    position: relative;
+    background-color: #33c48c;
+    padding: 75px 0px;
+    height: 255px;
+    z-index: 3;
+   }
+
+   .caract2-item-img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+   }
+
+   .caract2-item p{
+    font-size: 9pt;
+   }
+
+   #caract2-row2{
+    margin-top: 50px;
+    color: black;
+   }
+
+   #hero3{
+    background-color: whitesmoke;
+    position: relative;
+    padding: 120px 0px;
+    display: flex;
+    justify-content: center;
+   }
+
+   #hero3-imagenes{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+   }
+
+   .hero3-imgs{
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+   }
+
+   #hero3-imagenes:hover .hero3-img1{
+    z-index: 0;
+    translate: -50px 10px;
+    rotate: -25deg;
+    transition: 1s ease-in-out;
+   }
+
+   #hero3-imagenes:hover .hero3-img3{
+    z-index: 0;
+    translate: 50px 10px;
+    rotate: 25deg;
+    transition: 1s ease-in-out;
+   }
+
+   .hero3-img2{
+    position: relative;
+    z-index: 1;
+   }
