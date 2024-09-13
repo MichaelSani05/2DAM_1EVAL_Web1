@@ -247,11 +247,10 @@ to{
 
    #caract2-row2{
     margin-top: 50px;
-    color: black;
    }
 
    #hero3{
-    background-color: whitesmoke;
+    background-color: #000000;
     position: relative;
     padding: 120px 0px;
     display: flex;
@@ -276,14 +275,14 @@ to{
 
    #hero3-imagenes:hover .hero3-img1{
     z-index: 0;
-    translate: -50px 10px;
+    translate: -70px 10px;
     rotate: -25deg;
     transition: 1s ease-in-out;
    }
 
    #hero3-imagenes:hover .hero3-img3{
     z-index: 0;
-    translate: 50px 10px;
+    translate: 70px 10px;
     rotate: 25deg;
     transition: 1s ease-in-out;
    }
@@ -292,3 +291,52 @@ to{
     position: relative;
     z-index: 1;
    }
+
+   #hero3-textos{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    bottom: 6%;
+    position: absolute;
+    background: #000000d3;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    padding: 40px 0px;
+   }
+
+   h2{
+    font-weight: bolder;
+    text-transform: uppercase;
+   }
+
+   #hero3-textos button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: hsl(150, 80%, 48%);
+    box-shadow: rgba(238, 238, 238, 0.836) 0 0 8px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: all 0.5s ease;
+    color: white;
+    font-weight: 600;
+}
+
+#hero3-textos button:hover {
+    background-color: white;
+    color: hsl(0, 0%, 9%);
+    box-shadow: rgb(24, 220, 129) 0px 7px 29px 0px;
+}
+
+#hero3-textos button:active {
+    background-color: hsl(157, 80%, 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(231, 231, 231) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
