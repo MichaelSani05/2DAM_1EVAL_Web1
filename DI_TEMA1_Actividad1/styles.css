@@ -74,15 +74,6 @@ to{
 
 .hero-title{
     color: #33c48c !important;
-    animation: aparecer linear both, aparecer linear;
-    animation-timeline: view(100% 20%);
-    animation-range: 0 300px;
-}
-
-.hero-title2{
-    animation: aparecer linear both;
-    animation-timeline: view(10% 50%);
-    animation-range: 0 200px;
 }
 
 .hero img{
@@ -91,17 +82,6 @@ to{
     animation-range: 0 400px;
 }
 
-.hero-text{
-    animation: aparecer linear both;
-    animation-timeline: view(15% 20%);
-    animation-range: 0 350px;
-}
-
-.hero-text2{
-    animation: aparecer linear both;
-    animation-timeline: view(15% 40%);
-    animation-range: 0 350px;
-}
 
 #btn-visitar, #btn-hero {
     margin-top: 30px;
@@ -134,11 +114,13 @@ to{
 }
 
 #caracteristicas{
+    padding: 140px 0px;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(73, 73, 73);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 20%, #000000 80%, rgba(0, 0, 0, 0) 100%);
 }
 
 #caracteristicas i{
@@ -230,6 +212,7 @@ to{
    #caracteristicas-2{
     position: relative;
     background-color: #33c48c;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
     padding: 75px 0px;
     height: 255px;
     z-index: 3;
@@ -273,19 +256,18 @@ to{
     margin: auto;
    }
 
-   #hero3-imagenes:hover .hero3-img1{
-    z-index: 0;
-    translate: -70px 10px;
-    rotate: -25deg;
-    transition: 1s ease-in-out;
+   .hero3-img1{
+    animation: aparecer linear both;
+    animation-timeline: view(10% 60%);
+    animation-range: 0 150px;
    }
 
-   #hero3-imagenes:hover .hero3-img3{
-    z-index: 0;
-    translate: 70px 10px;
-    rotate: 25deg;
-    transition: 1s ease-in-out;
+   .hero3-img3{
+    animation: aparecer2 linear both;
+    animation-timeline: view(10% 60%);
+    animation-range: 0 150px;
    }
+
 
    .hero3-img2{
     position: relative;
@@ -302,7 +284,7 @@ to{
     bottom: 6%;
     position: absolute;
     background: #000000d3;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
     padding: 40px 0px;
    }
 
@@ -340,3 +322,49 @@ to{
     transform: translateY(10px);
     transition: 100ms;
 }
+
+.comment{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 20px 15px 20px 0px;
+    margin: 20px 0px;
+}
+
+.comment img{
+    border-radius: 50%;
+}
+
+#comments{
+    margin-top: -1px;
+    position: relative;
+    background-color: #000000;
+    color: black;
+}
+
+#comments p{
+    font-size: 8pt;
+    letter-spacing: 0.3pt;
+}
+
+/* ANIMACIONES */
+
+@keyframes aparecer {
+    0%{
+        
+    }
+
+    100%{
+        translate: -70px 10px;
+        rotate: -25deg;
+    }
+  }
+@keyframes aparecer2 {
+    0%{
+        
+    }
+
+    100%{
+        translate: 70px 10px;
+        rotate: 25deg;
+    }
+  }
