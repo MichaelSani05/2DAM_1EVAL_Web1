@@ -130,9 +130,8 @@ to{
 
 #destacado{
     margin: 50px 0px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 #destacado h1{
@@ -226,6 +225,12 @@ to{
 
    .caract2-item p{
     font-size: 9pt;
+   }
+
+   .caract2-item{
+    animation: aparecer3 linear both;
+    animation-timeline: view(10% 60%);
+    animation-range: -350px 150px;
    }
 
    #caract2-row2{
@@ -328,6 +333,9 @@ to{
     border-radius: 5px;
     padding: 20px 15px 20px 0px;
     margin: 20px 0px;
+    animation: aparecer3 linear both;
+    animation-timeline: view(10% 60%);
+    animation-range: -250px 150px;
 }
 
 .comment img{
@@ -346,6 +354,10 @@ to{
     letter-spacing: 0.3pt;
 }
 
+.stars i{
+    color: #e4bf1a;
+}
+
 /* ANIMACIONES */
 
 @keyframes aparecer {
@@ -357,7 +369,7 @@ to{
         translate: -70px 10px;
         rotate: -25deg;
     }
-  }
+}
 @keyframes aparecer2 {
     0%{
         
@@ -367,4 +379,15 @@ to{
         translate: 70px 10px;
         rotate: 25deg;
     }
-  }
+}
+
+@keyframes aparecer3 {
+    0%{
+        opacity: 0;
+        translate: 0px 50px;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
