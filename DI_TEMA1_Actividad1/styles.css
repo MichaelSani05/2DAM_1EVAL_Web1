@@ -138,6 +138,14 @@ to{
     color: #33c48c;
 }
 
+    .item-img{
+        position: relative;
+        z-index: -1;
+        animation: aparecer3 linear both;
+        animation-timeline: view(10% 20%);
+        animation-range: 0px 150px;
+    }
+
     .item-info{
         padding: 10px;
         background-color: white;
@@ -237,7 +245,7 @@ to{
     margin-top: 50px;
    }
 
-   #hero3{
+   #hero3, #hero4{
     background-color: #000000;
     position: relative;
     padding: 120px 0px;
@@ -245,7 +253,11 @@ to{
     justify-content: center;
    }
 
-   #hero3-imagenes{
+   #hero4{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
+   }
+
+   #hero3-imagenes, #hero4-imagenes{
     display: flex;
     width: 100%;
     justify-content: center;
@@ -279,7 +291,7 @@ to{
     z-index: 1;
    }
 
-   #hero3-textos{
+   #hero3-textos, #hero4-textos{
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -298,7 +310,7 @@ to{
     text-transform: uppercase;
    }
 
-   #hero3-textos button {
+   #hero3-textos button, #hero4-textos button{
     margin-top: 10px;
     padding: 10px 20px;
     border-radius: 50px;
@@ -314,13 +326,13 @@ to{
     font-weight: 600;
 }
 
-#hero3-textos button:hover {
+#hero3-textos button:hover, #hero4-textos button:hover{
     background-color: white;
     color: hsl(0, 0%, 9%);
     box-shadow: rgb(24, 220, 129) 0px 7px 29px 0px;
 }
 
-#hero3-textos button:active {
+#hero3-textos button:active, #hero4-textos button:active {
     background-color: hsl(157, 80%, 48%);
     color: hsl(0, 0%, 100%);
     box-shadow: rgb(231, 231, 231) 0px 0px 0px 0px;
