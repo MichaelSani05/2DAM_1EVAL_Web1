@@ -254,7 +254,7 @@ to{
    }
 
    #hero4{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
    }
 
    #hero3-imagenes, #hero4-imagenes{
@@ -303,6 +303,10 @@ to{
     background: #000000d3;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
     padding: 40px 0px;
+   }
+
+   #hero4-textos{
+    background-color: #00000000;
    }
 
    h2{
