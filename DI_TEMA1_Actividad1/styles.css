@@ -254,7 +254,7 @@ to{
    }
 
    #hero4{
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, #000000 50%, #000000 100%);
+    padding: 200px 0px;
    }
 
    #hero3-imagenes, #hero4-imagenes{
@@ -372,6 +372,28 @@ to{
 
 .stars i{
     color: #e4bf1a;
+}
+
+#newletter{
+    background-color: #000000;
+}
+
+.suscribe {
+  margin: 5px 0px;
+  background: none;
+  border: none;
+  outline: none;
+  max-width: 190px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  color: #fff;
+  border: 1px solid white;
+}
+
+.suscribe:focus{
+    box-shadow: 2px 2px 2px white;
 }
 
 /* ANIMACIONES */
