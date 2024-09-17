@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    min-height: 100vh;
+    color: #1b5e20;
+}
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,100,0,0.1);
+    transition: all 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,100,0,0.2);
+}
+.card-header {
+    background: linear-gradient(45deg, #43a047 0%, #66bb6a 100%);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.btn-primary {
+    background: linear-gradient(45deg, #2e7d32 0%, #43a047 100%);
+    border: none;
+}
+.btn-primary:hover {
+    background: linear-gradient(45deg, #43a047 0%, #2e7d32 100%);
+}
+.product-image {
+    transition: all 0.3s ease;
+    border: 2px solid #81c784;
+}
+.product-image:hover {
+    transform: scale(1.05);
+    border-color: #4caf50;
+}
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #81c784;
+    border-radius: 4px;
+    color: #1b5e20;
+}
+.animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(45deg, #a5d6a7, #81c784, #66bb6a);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+.product-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+.btn-outline-secondary {
+    color: #2e7d32;
+    border-color: #2e7d32;
+}
+.btn-outline-secondary:hover {
+    background-color: #2e7d32;
+    color: white;
+}
+.btn-outline-danger {
+    color: #c62828;
+    border-color: #c62828;
+}
+.btn-outline-danger:hover {
+    background-color: #c62828;
+    color: white;
+}
+h1.cesta-title {
+    color: #1b5e20;
+    text-shadow: 2px 2px 4px rgba(0,100,0,0.2);
+}
