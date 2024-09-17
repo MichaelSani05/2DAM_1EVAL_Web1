@@ -1,8 +1,79 @@
 body {
-    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     min-height: 100vh;
     color: #1b5e20;
+    background-color: rgb(5, 5, 32);
 }
+
+header{
+    position: fixed;
+    z-index: 9;
+    top: 0;
+}
+
+main{
+    margin-top: 75px;
+}
+
+nav{
+    background-color: rgb(0, 0, 0);
+}
+
+nav a, nav span{
+    color: white !important;
+}
+
+.navbar-brand{
+    letter-spacing: 1.5px;
+}
+
+.nav-link:hover{
+    color: #33c48c !important;
+}
+
+.navbar-toggler{
+    background-color: #33c48c;
+}
+
+.navbar-toggler:hover{
+    box-shadow: 2px 2px 2px white;
+    border: 1px solid white;
+}
+
+.navbar-toggler:active{
+    background-color: white;
+}
+
+.dropdown-item{
+    color: black !important;
+}
+
+.space-1, .space-2, .space-3{
+    width: var(--size);
+    height: var(--size);
+    background: #fff;
+    box-shadow: var(--space-layer);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 75%;
+    animation: moveStars var(--duration) linear infinite;
+}
+
+@keyframes moveStars{
+    from{
+        transform: translateY(0);
+    }
+
+    to{
+        transform: translateY(-100vh);
+    }
+}
+
+p{
+    letter-spacing: 1.1px;
+}
+
 .card {
     border: none;
     border-radius: 15px;
@@ -15,7 +86,7 @@ body {
     box-shadow: 0 15px 30px rgba(0,100,0,0.2);
 }
 .card-header {
-    background: linear-gradient(45deg, #43a047 0%, #66bb6a 100%);
+    background: linear-gradient(45deg, #33c48c 0%, rgb(141, 248, 146) 100%);
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -30,7 +101,7 @@ body {
 }
 .product-image {
     transition: all 0.3s ease;
-    border: 2px solid #81c784;
+    border: 2px solid #33c48c;
 }
 .product-image:hover {
     transform: scale(1.05);
@@ -41,7 +112,7 @@ body {
     text-align: center;
     border: 1px solid #81c784;
     border-radius: 4px;
-    color: #1b5e20;
+    color: #33c48c;
 }
 .animated-bg {
     position: fixed;
@@ -80,6 +151,6 @@ body {
     color: white;
 }
 h1.cesta-title {
-    color: #1b5e20;
+    color: #33c48c;
     text-shadow: 2px 2px 4px rgba(0,100,0,0.2);
 }

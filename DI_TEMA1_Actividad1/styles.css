@@ -8,6 +8,8 @@ main{
     padding-top: 75px;
 }
 
+/* HEADER */
+
 nav{
     background-color: rgb(0, 0, 0);
 }
@@ -58,13 +60,13 @@ p{
 }
   
 @keyframes moveStars{
-from{
-    transform: translateY(0);
-}
+    from{
+        transform: translateY(0);
+    }
 
-to{
-    transform: translateY(-100vh);
-}
+    to{
+        transform: translateY(-100vh);
+    }
 }
 
 .hero{
