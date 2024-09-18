@@ -11,6 +11,8 @@ main{
 /* HEADER */
 
 nav{
+    top: 0;
+    z-index: 10;
     background-color: rgb(0, 0, 0);
 }
 
