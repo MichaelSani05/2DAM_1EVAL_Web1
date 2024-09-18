@@ -400,6 +400,71 @@ p{
     box-shadow: 2px 2px 2px white;
 }
 
+#contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    padding-bottom: 100px;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.icon {
+    text-align: center;
+    font-size: 3rem;
+    color: #33c48c;
+    margin-bottom: 1rem;
+}
+.contact-title{
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+.contact-form1{
+    display: flex;
+    flex-direction: column;
+}
+.contact-label {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+.contact-input, .contact-textarea{
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.contact-input:focus, .contact-textarea:focus {
+    outline: none;
+    border-color: #33c48c;
+    box-shadow: 0 0 0 2px rgba(51, 196, 140, 0.2);
+}
+.contact-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+.contact-submit {
+    background-color: #33c48c;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact-submit:hover {
+    background-color: #2ba77a;
+}
+
 /* FOOTER */
 
  #footer{
