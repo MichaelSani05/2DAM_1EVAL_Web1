@@ -45,6 +45,28 @@ nav a, nav span{
     color: black !important;
 }
 
+#banner h1, #banner h3{
+    text-align: center;
+    font-family: system-ui;
+    font-weight: bolder;
+}
+
+#banner h1{
+    font-size: 55pt;
+    color: #13aa70;
+    margin: 0px;
+}
+
+#banner h3{
+    margin-top: -5px;
+    font-size: 25pt;
+    letter-spacing: 0.5rem;
+}
+
+#banner p{
+    margin-top: 10px;
+}
+
 p{
     letter-spacing: 1.1px;
 }
@@ -118,6 +140,7 @@ p{
 }
 
 #caracteristicas{
+    margin: 0;
     padding: 140px 0px;
     height: auto;
     align-items: center;
@@ -253,6 +276,7 @@ p{
     padding: 120px 0px;
     display: flex;
     justify-content: center;
+    z-index: -1;
    }
 
    #hero4{
@@ -361,7 +385,7 @@ p{
 }
 
 #comments{
-    margin-top: -1px;
+    margin: -1px 0px 0px 0px;
     position: relative;
     background-color: #000000;
     color: black;
@@ -612,5 +636,47 @@ p{
 
     100%{
         opacity: 1;
+    }
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    .hero3-imgs{
+        height: 275px;
+    }
+
+    .caract2-item p{
+        font-size: 10pt;
+    }
+
+    #banner h1{
+        font-size: 95pt;
+    }
+    
+    #banner h3{
+        margin-top: -15px;
+        font-size: 45pt;
+        letter-spacing: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .hero3-imgs{
+        height: 350px;
+    }
+
+    .caract2-item p{
+        font-size: 11pt;
+    }
+
+    #banner h1{
+        font-size: 125pt;
+    }
+    
+    #banner h3{
+        margin-top: -15px;
+        font-size: 75pt;
+        letter-spacing: 1.25rem;
     }
 }
